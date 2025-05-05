@@ -6,7 +6,7 @@ It also integrates easily with claude desktop and gives helpful business intelli
 
 This is for Gemini model with sample server. The full server is not included.
 
-Contact me if your need the full project through [Gmail](aniekanetimudo@gmail.com) or [Linkedin](linkedin.com/in/aniekan-etim-udo)
+Contact me if you need the full project through [Gmail](mailto:aniekanetimudo@gmail.com) or [LinkedIn](https://www.linkedin.com/in/aniekan-etim-udo)
 ## project structure
 ```
 Directory structure:
@@ -58,8 +58,8 @@ The server implements the following features:
 1.  ## Initialize the project 
     #### launch CMD where you want to keep your project, and clone the repo, enter project folder
 ```bash
-    git clone https://github.com/Dr-Aniekan-Udo/Gemini-Agent-MCP.git
-    cd Gemini-Agent-MCP
+    git clone https://github.com/Dr-Aniekan-Udo/langgraph-agent-mcp.git
+    cd langgraph-agent-mcp
 ```
 
 2.  ## Create virtual environment and activate it
