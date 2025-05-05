@@ -10,7 +10,7 @@ Contact me if your need the full project through [Gmail](aniekanetimudo@gmail.co
 ## project structure
 ```
 Directory structure:
-└── gemini-agent-mcp/
+└── langgraph-agent-mcp/
     ├── README.md
     ├── LICENSE
     ├── main.py
@@ -21,17 +21,22 @@ Directory structure:
         ├── __init__.py
         ├── gemini_client.py
         ├── gemini_server_sample.py
+        ├── openai_client.py
         ├── gemini_utilities/
         │   ├── __init__.py
-        │   ├── clean_schema.py
-        │   ├── stdio_chat_loop.py
-        │   ├── system_input.py
-        │   └── tools_converter.py
+        │   ├── gem_server_connect.py
+        │   ├── response_encoder.py
+        │   ├── server_connect.py
+        │   └── system_input.py
         ├── logfolder/
         │   ├── __init__.py
         │   ├── logger.py
         │   ├── logging_configs.json
         │   └── logging_format.py
+        ├── openai_utilities/
+        │   ├── __init__.py
+        │   ├── open_server_connect.py
+        │   └── system_input.py
         └── tool_sample/
             ├── run_realtime_report.py
             └── tabulated.py
@@ -73,6 +78,7 @@ The server implements the following features:
 - create a `.env` file inside the src folder
 - add the correct path to your google credentials in the env file
     `GOOGLE_APPLICATION_CREDENTIALS="C:\\Users\\path to\\credentials.json"`
+- replace this: "ga4_server.py" with this: "gemini_server_sample.py" in the cleint script
 
 ## Running the Server
 
@@ -98,11 +104,11 @@ uv run mcp src/gemini_client.py
   Create a .env file inside `src` add Gemini_API_Key and google credential as shown below to your .env file
   ```ENV
     GOOGLE_APPLICATION_CREDENTIALS="C:\\Users\\`path to`\\credentials.json"
-    OPENAI_API_KEY="add your gemini api key"
+    OPENAI_API_KEY="add your openai api key"
   ```
   run the client code
 ```bash
-uv run mcp src/gemini_client.py
+uv run mcp src/openai_client.py
 ```
 
 #### To run on Claude desktop
